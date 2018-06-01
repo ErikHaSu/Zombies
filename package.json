@@ -1,0 +1,17 @@
+{
+  "name": "zombies",
+  "version": "1.0.0",
+  "description": "practica de el dia 29 de mayo del 2018",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Erik Flores",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "morgan": "^1.9.0"
+  }
+}

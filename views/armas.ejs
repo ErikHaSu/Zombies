@@ -1,0 +1,29 @@
+<%include header%>
+<h1> Armas </h1>
+<a href="/new-entry"class="btn btn-primary pull-right"> Añadir arma </a>
+<br>
+<div class="container">       
+    <table class="table table-condensed">
+        <thead>
+            <tr>
+                <th>Arma</th>
+                <th>Tipo</th>
+            </tr>
+        </thead>
+            <%if(entries.length){%>
+                <%entries.forEach((entry)=>{%>
+                    <tbody class= "panel panel-default">
+                        <tr class="panel-heading">
+                            <td class= "text-muted pull-left">
+                            <%=entry.title%>
+                            </td>
+                            <td class="panel-body">
+                                <%=entry.body%>
+                            </td>
+                        </tr>
+                    </tbody>
+                <%})%>
+            <%}%>
+    </table>
+</div>
+<%include footer%>
